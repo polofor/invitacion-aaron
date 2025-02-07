@@ -44,6 +44,21 @@
     currentIndex = (currentIndex + 1) % images.length;
     images[currentIndex].classList.add('active');
     }, 3000);
+
+           // Función para activar la reproducción manualmente (por restricciones de algunos navegadores)
+    document.addEventListener("click", function() {
+    const music = document.getElementById("background-music");
+    if (music.paused) {
+        music.play();
+    }
+    }); // Función para activar la reproducción manualmente (por restricciones de algunos navegadores)
+    document.addEventListener("click", function() {
+    const music = document.getElementById("background-music");
+    if (music.paused) {
+        music.play();
+    }
+    });
+      
 </script>
 </body>
 </html>
