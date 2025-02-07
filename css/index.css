@@ -1,85 +1,86 @@
- /* Estilos generales */
-body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background: url('imagenes/imagen.jpg') no-repeat center center fixed;
-    background-size: cover;
-    color: white;
-}
-
-  /* Contenedor principal con efecto neon */
-.container {
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 30px;
-    background: rgba(0, 0, 0, 0.8);
-    border-radius: 20px;
-    border: 2px solid #39ff14;
-    box-shadow: 
-    0 0 10px #39ff14, 
-    0 0 20px #39ff14, 
-    0 0 30px #39ff14, 
-    0 0 40px #39ff14;
-}
-
-  /* Estilo para la sección de información con borde neon */
-.info-box {
-    margin: 20px auto;
-    padding: 20px;
-    border: 2px solid #ff4081;
-    border-radius: 15px;
-    background: rgba(255, 255, 255, 0.1);
-    box-shadow: 
-    0 0 10px #ff4081, 
-    0 0 20px #ff4081, 
-    0 0 30px #ff4081;
-}
-
-.decorations {
-    font-size: 24px;
-    margin: 20px 0;
-}
-
-h1 {
-    color: #39ff14;
-    text-shadow: 0 0 5px #39ff14, 0 0 10px #39ff14;
-}
-
-.button {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 15px 30px;
-    background-color: #ff4081;
-    color: white;
-    text-decoration: none;
-    border-radius: 10px;
-    font-size: 20px;
-    font-weight: bold;
-    transition: background-color 0.3s, transform 0.2s;
-}
-
-.button:hover {
-    background-color: #d9366d;
-    transform: scale(1.05);
-}
-
-  /* Estilos del carrusel */
-.carousel {
-    margin: 20px auto;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 10px;
-    display: inline-block;
-}
-
-.carousel img {
-    display: none;
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
-.carousel img.active {
-    display: block;
-}
+ /* Fondo con degradado de rojo a blanco y de nuevo a rojo */
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        background: linear-gradient(to bottom, #ff0000, #ffffff, #ff0000);
+        color: white;
+        margin: 0;
+        padding: 0;
+      }
+      
+      /* Contenedor principal con efecto neón */
+      .container {
+        max-width: 800px;
+        margin: 40px auto;
+        padding: 30px;
+        background: rgba(216, 36, 36, 0.685);
+        border-radius: 20px;
+        border: 2px solid #39ff14;
+        box-shadow: 
+          0 0 10px #39ff14, 
+          0 0 20px #39ff14, 
+          0 0 30px #39ff14, 
+          0 0 40px #39ff14;
+      }
+  
+      /* Estilo para la sección de información con borde neón */
+      .info-box {
+        margin: 20px auto;
+        padding: 20px;
+        border: 2px solid #ff4081;
+        border-radius: 15px;
+        background: rgba(255, 255, 255, 0.1);
+        box-shadow: 
+          0 0 10px #ff4081, 
+          0 0 20px #ff4081, 
+          0 0 30px #ff4081;
+      }
+  
+      .decorations {
+        font-size: 24px;
+        margin: 20px 0;
+      }
+  
+      h1 {
+        color: #39ff14;
+        text-shadow: 0 0 5px #247416, 0 0 10px #247416;
+      }
+  
+      .button {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 15px 30px;
+        background-color: #ff4081;
+        color: white;
+        text-decoration: none;
+        border-radius: 10px;
+        font-size: 20px;
+        font-weight: bold;
+        transition: background-color 0.3s, transform 0.2s;
+      }
+  
+      .button:hover {
+        background-color: #d9366d;
+        transform: scale(1.05);
+      }
+  
+      /* Estilos del carrusel */
+      .carousel {
+        margin: 20px auto;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 10px;
+        display: inline-block;
+      }
+  
+      .carousel img {
+        display: none;
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+      }
+  
+      .carousel img.active {
+        display: block;
+      }
