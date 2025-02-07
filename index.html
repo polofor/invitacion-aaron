@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="css/index.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Invitación de Cumpleaños</title>
+
+</head>
+<body>
+<div class="container">
+    <h1>🎈🎂 ¡Estás Invitado a mi Cumpleaños! 🎉🎁</h1>
+    <p class="decorations">🎊 Música, juegos, comida deliciosa y muchas sorpresas 🎊</p>
+    <p>
+    <strong>📍 Ubicación:</strong>
+    <a href="https://www.google.com/maps?q=[LATITUD],[LONGITUD]" target="_blank">Ver en Google Maps</a>
+    </p>
+    <p><strong>⏰ Hora:</strong> [Hora de inicio] - [Hora de finalización]</p>
+    <p><strong>🎶 Música en vivo y actividades especiales</strong></p>
+
+    <!-- Carrusel de 6 imágenes -->
+    <div class="carousel">
+    <img src="img/imagen.jpg" alt="Imagen 1" class="active">
+    <img src="img/img1.jpg" alt="Imagen 2">
+    <img src="img/img2.jpg" alt="Imagen 3">
+    <img src="img/img3.jpg" alt="Imagen 4">
+    <img src="img/img4.jpg" alt="Imagen 5">
+    <img src="imagenes/img6.jpg" alt="Imagen 6">
+    </div>
+
+    <a href="https://wa.me/[tu_numero]?text=¡Hola! Confirmo mi asistencia al cumpleaños." class="button">✅ Confirmar Asistencia</a>
+</div>
+
+<script>
+    // JavaScript para cambiar la imagen activa cada 3 segundos
+    const images = document.querySelectorAll('.carousel img');
+    let currentIndex = 0;
+    setInterval(() => {
+    images[currentIndex].classList.remove('active');
+    currentIndex = (currentIndex + 1) % images.length;
+    images[currentIndex].classList.add('active');
+    }, 3000);
+</script>
+</body>
+</html>
