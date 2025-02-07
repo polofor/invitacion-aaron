@@ -45,18 +45,21 @@
     images[currentIndex].classList.add('active');
     }, 3000);
 
-           // Función para activar la reproducción manualmente (por restricciones de algunos navegadores)
-    document.addEventListener("click", function() {
-    const music = document.getElementById("background-music");
-    if (music.paused) {
-        music.play();
-    }
-    }); // Función para activar la reproducción manualmente (por restricciones de algunos navegadores)
-    document.addEventListener("click", function() {
-    const music = document.getElementById("background-music");
-    if (music.paused) {
-        music.play();
-    }
+// Intentar reproducir la música automáticamente
+document.addEventListener("DOMContentLoaded", function () {
+        const music = document.getElementById("background-music");
+        
+        // Intenta reproducir la música
+        music.play().catch(() => {
+            console.log("Reproducción automática bloqueada, esperando interacción del usuario...");
+        });
+
+        // Si está bloqueada, iniciar la música al primer clic o toque en la pantalla
+        document.addEventListener("click", function () {
+            if (music.paused) {
+                music.play();
+            }
+        }, { once: true });
     });
       
 </script>
