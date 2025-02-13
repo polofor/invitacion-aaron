@@ -8,13 +8,7 @@
 
 </head>
 <body>
-
-    <audio id="background-music" autoplay loop>
-        <source src="img/CUMcancion.mp3" type="audio/mpeg">
-        Tu navegador no soporta el audio.
-    </audio>
     
-
 <div class="container">
     <h1>🎈🎂 ¡Estás Invitado a mi Cumpleaños! 🎉🎁</h1>
     <p class="decorations">🎊 Música, juegos, comida deliciosa y muchas sorpresas 🎊</p>
@@ -51,22 +45,6 @@
     }, 3000);
 
 
-// Intentar reproducir la música automáticamente
-document.addEventListener("DOMContentLoaded", function () {
-        const music = document.getElementById("background-music");
-        
-        // Intenta reproducir la música
-        music.play().catch(() => {
-            console.log("Reproducción automática bloqueada, esperando interacción del usuario...");
-        });
-
-        // Si está bloqueada, iniciar la música al primer clic o toque en la pantalla
-        document.addEventListener("click", function () {
-            if (music.paused) {
-                music.play();
-            }
-        }, { once: true });
-    });
 </script>
 </body>
 </html>
